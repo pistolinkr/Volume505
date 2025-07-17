@@ -250,7 +250,7 @@ header {
 .input-section:focus-within {
     border-color: var(--c-border-focus);
     box-shadow: var(--shadow-xl);
-    top: 24px;
+     top: 24px;
     transform: scale(1.01);
 }
 
@@ -518,16 +518,16 @@ header {
     word-break: break-word;
     flex: 1;
     margin-left: 16px;
-}
+    }
 
 /* AI Summary Card Special Styling */
 .ai-summary-card {
     grid-column: 1 / -1;
     background: var(--gradient-surface);
     border: 1px solid var(--c-border);
-    position: relative;
+        position: relative;
     overflow: hidden;
-}
+    }
 
 .ai-summary-card::before {
     background: var(--gradient-secondary);
@@ -662,7 +662,7 @@ header {
 
 /* Toast Notifications */
 .toast {
-    position: fixed;
+  position: fixed;
     top: 20px;
     right: 20px;
     background: var(--c-surface);
@@ -683,9 +683,9 @@ header {
 
 /* Blur Overlay */
 .sticky-blur-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
     right: 0;
     height: 100px;
     background: linear-gradient(180deg, rgba(250, 251, 252, 0.9) 0%, rgba(250, 251, 252, 0) 100%);
@@ -693,28 +693,28 @@ header {
     z-index: 50;
     opacity: 0;
     transition: opacity var(--transition-normal);
-    pointer-events: none;
+  pointer-events: none;
 }
 
 .sticky-blur-overlay.active {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* Enhanced Card Animations */
 .input-section, .info-card, .ai-summary-card {
     animation: card-fade-in 0.6s ease-out;
     animation-fill-mode: both;
-}
+  }
 
 @keyframes card-fade-in {
     from {
         opacity: 0;
         transform: translateY(20px);
-    }
+  }
     to {
         opacity: 1;
         transform: translateY(0);
-    }
+  }
 }
 
 /* Stagger animation for cards */
@@ -725,70 +725,70 @@ header {
 .info-card:nth-child(5) { animation-delay: 0.5s; }
 .info-card:nth-child(6) { animation-delay: 0.6s; }
 
-.results-section {
+  .results-section {
     animation: slide-up 0.8s ease-out;
     margin-top: 40px;
-}
-
+  }
+  
 @keyframes slide-up {
     from {
         opacity: 0;
         transform: translateY(40px);
-    }
+  }
     to {
         opacity: 1;
         transform: translateY(0);
-    }
+  }
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     html, body {
         overflow-x: hidden;
-    }
-    
+}
+
     .container {
         padding: 40px 16px;
-    }
-    
+}
+
     .header-content {
         flex-direction: column;
         gap: 20px;
         text-align: center;
-    }
-    
+}
+
     .main-title {
         font-size: 2.5rem;
-    }
-    
+}
+
     .subtitle {
-        font-size: 1.1rem;
-    }
-    
+    font-size: 1.1rem;
+}
+
     .input-section {
         padding: 20px;
         margin-bottom: 30px;
-    }
-    
+}
+
     .input-group {
         flex-direction: column;
-        gap: 12px;
+    gap: 12px;
     }
     
     #urlInput, #countrySelect, #submitBtn {
         width: 100%;
         text-align: center;
-    }
-    
+}
+
     .info-grid {
         grid-template-columns: 1fr;
         gap: 20px;
-    }
-    
+}
+
     .info-card {
         padding: 20px;
-    }
-    
+}
+
     .sites-row {
         flex-direction: column;
         gap: 12px;
@@ -816,16 +816,16 @@ header {
     
     html {
         background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-    }
-    
+}
+
     .input-section, .info-card, .ai-summary-card {
         background: rgba(30, 41, 59, 0.8);
         backdrop-filter: blur(20px);
-    }
-    
+}
+
     .results-section {
         background: transparent;
-    }
+}
 }
 
 /* Accessibility */
@@ -853,7 +853,7 @@ header {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--c-surface);
+  background: var(--c-surface);
 }
 
 ::-webkit-scrollbar-thumb {

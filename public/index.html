@@ -46,49 +46,49 @@
                         <a class="popular-site" href="#" data-url="https://www.google.com" target="_self" rel="noopener" title="Analyze Google">
                             <span class="site-icon">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Google_Favicon_2025.svg/1920px-Google_Favicon_2025.svg.png" alt="Google" width="32" height="32" loading="lazy" />
-                            </span>
-                            <span>Google</span>
-                        </a>
+                        </span>
+                        <span>Google</span>
+                    </a>
                         <a class="popular-site" href="#" data-url="https://www.facebook.com" target="_self" rel="noopener" title="Analyze Facebook">
                             <span class="site-icon">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/1200px-2023_Facebook_icon.svg.png?20231011122028" alt="Facebook" width="32" height="32" loading="lazy" />
-                            </span>
-                            <span>Facebook</span>
-                        </a>
+                        </span>
+                        <span>Facebook</span>
+                    </a>
                         <a class="popular-site" href="#" data-url="https://www.youtube.com" target="_self" rel="noopener" title="Analyze YouTube">
                             <span class="site-icon">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube" width="32" height="32" loading="lazy" />
-                            </span>
-                            <span>YouTube</span>
-                        </a>
+                        </span>
+                        <span>YouTube</span>
+                    </a>
                         <a class="popular-site" href="#" data-url="https://www.threads.net" target="_self" rel="noopener" title="Analyze Threads">
                             <span class="site-icon">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Threads_%28app%29_logo.svg" alt="Threads" width="32" height="32" loading="lazy" />
-                            </span>
-                            <span>Threads</span>
-                        </a>
-                    </div>
+                        </span>
+                        <span>Threads</span>
+                    </a>
+                </div>
                     <div class="sites-row">
                         <a class="popular-site" href="#" data-url="https://www.blueskyweb.xyz" target="_self" rel="noopener" title="Analyze Bluesky">
                             <span class="site-icon">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Bluesky_butterfly-logo.svg" alt="Bluesky" width="32" height="32" loading="lazy" />
-                            </span>
-                            <span>Bluesky</span>
-                        </a>
+                        </span>
+                        <span>Bluesky</span>
+                    </a>
                         <a class="popular-site" href="#" data-url="https://www.mastodon.social" target="_self" rel="noopener" title="Analyze Mastodon">
                             <span class="site-icon">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Mastodon_Logotype_%28Simple%29.svg" alt="Mastodon" width="32" height="32" loading="lazy" />
-                            </span>
-                            <span>Mastodon</span>
-                        </a>
+                        </span>
+                        <span>Mastodon</span>
+                    </a>
                         <a class="popular-site" href="#" data-url="https://www.notion.so" target="_self" rel="noopener" title="Analyze Notion">
                             <span class="site-icon">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg" alt="Notion" width="32" height="32" loading="lazy" />
-                            </span>
-                            <span>Notion</span>
-                        </a>
-                    </div>
+                        </span>
+                        <span>Notion</span>
+                    </a>
                 </div>
+            </div>
             </section>
 
             <!-- Input Section -->
@@ -101,39 +101,39 @@
                             <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.72-1.72"></path>
                         </svg>
                         <input 
-                            type="url" 
-                            id="urlInput" 
+                        type="url" 
+                        id="urlInput" 
                             placeholder="Enter website URL (e.g., https://example.com)"
-                            required
-                            aria-required="true"
-                            aria-label="Website URL"
-                            inputmode="url"
-                        >
-                        <label for="countrySelect" class="visually-hidden">Select Region</label>
-                        <select id="countrySelect" title="Select Region" aria-label="Select Region">
+                        required
+                        aria-required="true"
+                        aria-label="Website URL"
+                        inputmode="url"
+                    >
+                    <label for="countrySelect" class="visually-hidden">Select Region</label>
+                    <select id="countrySelect" title="Select Region" aria-label="Select Region">
                             <option value="KR">🇰🇷 Korea</option>
                             <option value="US">🇺🇸 United States</option>
                             <option value="JP">🇯🇵 Japan</option>
                             <option value="global">🌍 Global</option>
-                        </select>
-                        <button type="submit" id="submitBtn" aria-label="Analyze Website">
-                            <span class="btn-text">Analyze</span>
-                            <span class="loading-spinner" style="display: none;" aria-hidden="true"></span>
-                        </button>
-                    </div>
-                </form>
-            </section>
+                    </select>
+                    <button type="submit" id="submitBtn" aria-label="Analyze Website">
+                        <span class="btn-text">Analyze</span>
+                        <span class="loading-spinner" style="display: none;" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </form>
+        </section>
 
             <!-- Results Section -->
-            <section class="results-section" id="resultsSection" style="display: none;" aria-live="polite">
-                <header class="info-header">
-                    <h2>Analysis Report</h2>
-                    <div class="status-indicator" id="statusIndicator" aria-live="polite"></div>
-                </header>
-                
-                <div class="info-grid">
+        <section class="results-section" id="resultsSection" style="display: none;" aria-live="polite">
+            <header class="info-header">
+                <h2>Analysis Report</h2>
+                <div class="status-indicator" id="statusIndicator" aria-live="polite"></div>
+            </header>
+            
+            <div class="info-grid">
                     <!-- AI Summary Card -->
-                    <article class="info-card ai-summary-card" style="grid-column: 1 / -1;" aria-labelledby="aiSummaryTitle">
+                <article class="info-card ai-summary-card" style="grid-column: 1 / -1;" aria-labelledby="aiSummaryTitle">
                         <h3 id="aiSummaryTitle" data-draggable="true">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
@@ -142,13 +142,13 @@
                                 <path d="M3 5h4"></path>
                                 <path d="M17 19h4"></path>
                             </svg>
-                            AI Summary
-                        </h3>
-                        <p class="ai-summary-content" id="aiSummaryContent"></p>
-                    </article>
-                    
+                        AI Summary
+                    </h3>
+                    <p class="ai-summary-content" id="aiSummaryContent"></p>
+                </article>
+                
                     <!-- General Information -->
-                    <article class="info-card" aria-labelledby="generalInfoTitle">
+                <article class="info-card" aria-labelledby="generalInfoTitle">
                         <h3 id="generalInfoTitle" data-draggable="true">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <circle cx="12" cy="12" r="10"></circle>
@@ -157,32 +157,32 @@
                             </svg>
                             General
                         </h3>
-                        <div class="info-item">
-                            <span class="label">Favicon</span>
+                    <div class="info-item">
+                        <span class="label">Favicon</span>
                             <span class="value" id="siteFaviconCell">
                                 <img id="siteFavicon" src="" alt="Site favicon" style="width: 16px; height: 16px; vertical-align: middle; display: none;">
                             </span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">URL</span>
-                            <span class="value" id="siteUrl"></span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Title</span>
-                            <span class="value" id="siteTitle"></span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Description</span>
-                            <span class="value" id="siteDescription"></span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Canonical URL</span>
-                            <span class="value" id="siteCanonicalUrl"></span>
-                        </div>
-                    </article>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">URL</span>
+                        <span class="value" id="siteUrl"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Title</span>
+                        <span class="value" id="siteTitle"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Description</span>
+                        <span class="value" id="siteDescription"></span>
+                    </div>
+                     <div class="info-item">
+                        <span class="label">Canonical URL</span>
+                        <span class="value" id="siteCanonicalUrl"></span>
+                    </div>
+                </article>
 
                     <!-- Technical Information -->
-                    <article class="info-card" aria-labelledby="technicalInfoTitle">
+                <article class="info-card" aria-labelledby="technicalInfoTitle">
                         <h3 id="technicalInfoTitle" data-draggable="true">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
@@ -191,26 +191,26 @@
                             </svg>
                             Technical
                         </h3>
-                        <div class="info-item">
-                            <span class="label">Status Code</span>
-                            <span class="value" id="statusCode"></span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Response Time</span>
-                            <span class="value" id="responseTime"></span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Content Type</span>
-                            <span class="value" id="contentType"></span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Server</span>
-                            <span class="value" id="serverInfo"></span>
-                        </div>
-                    </article>
+                    <div class="info-item">
+                        <span class="label">Status Code</span>
+                        <span class="value" id="statusCode"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Response Time</span>
+                        <span class="value" id="responseTime"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Content Type</span>
+                        <span class="value" id="contentType"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Server</span>
+                        <span class="value" id="serverInfo"></span>
+                    </div>
+                </article>
 
                     <!-- Metadata Information -->
-                    <article class="info-card" aria-labelledby="metadataInfoTitle">
+                <article class="info-card" aria-labelledby="metadataInfoTitle">
                         <h3 id="metadataInfoTitle" data-draggable="true">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
@@ -221,44 +221,44 @@
                             </svg>
                             Metadata
                         </h3>
-                        <div class="info-item">
-                            <span class="label">Keywords</span>
-                            <span class="value" id="siteKeywords"></span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Language</span>
-                            <span class="value" id="siteLanguage"></span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Encoding</span>
-                            <span class="value" id="siteEncoding"></span>
-                        </div>
-                    </article>
+                    <div class="info-item">
+                        <span class="label">Keywords</span>
+                        <span class="value" id="siteKeywords"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Language</span>
+                        <span class="value" id="siteLanguage"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Encoding</span>
+                        <span class="value" id="siteEncoding"></span>
+                    </div>
+                </article>
 
                     <!-- Security Information -->
-                    <article class="info-card" aria-labelledby="securityInfoTitle">
+                <article class="info-card" aria-labelledby="securityInfoTitle">
                         <h3 id="securityInfoTitle" data-draggable="true">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                             </svg>
                             Security
                         </h3>
-                        <div class="info-item">
-                            <span class="label">HTTPS</span>
-                            <span class="value" id="isHttps"></span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">SSL Status</span>
-                            <span class="value" id="sslStatus"></span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Security Headers</span>
-                            <span class="value" id="securityHeaders"></span>
-                        </div>
-                    </article>
-                    
+                    <div class="info-item">
+                        <span class="label">HTTPS</span>
+                        <span class="value" id="isHttps"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">SSL Status</span>
+                        <span class="value" id="sslStatus"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Security Headers</span>
+                        <span class="value" id="securityHeaders"></span>
+                    </div>
+                </article>
+                
                     <!-- Open Graph Information -->
-                    <article class="info-card" aria-labelledby="ogInfoTitle">
+                <article class="info-card" aria-labelledby="ogInfoTitle">
                         <h3 id="ogInfoTitle" data-draggable="true">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
@@ -267,50 +267,50 @@
                             </svg>
                             Open Graph
                         </h3>
-                        <div class="info-item">
-                            <span class="label">OG Title</span>
-                            <span class="value" id="ogTitle"></span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">OG Type</span>
-                            <span class="value" id="ogType"></span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">OG Image</span>
-                            <span class="value" id="ogImageContainer">
+                    <div class="info-item">
+                        <span class="label">OG Title</span>
+                        <span class="value" id="ogTitle"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">OG Type</span>
+                        <span class="value" id="ogType"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">OG Image</span>
+                        <span class="value" id="ogImageContainer">
                                 <img id="ogImage" src="" alt="Open Graph Image" style="max-width: 100%; border-radius: 5px; margin-top: 5px; display: none;">
-                            </span>
-                        </div>
-                    </article>
+                        </span>
+                    </div>
+                </article>
 
                     <!-- Resources Information -->
-                    <article class="info-card" aria-labelledby="resourcesInfoTitle">
+                <article class="info-card" aria-labelledby="resourcesInfoTitle">
                         <h3 id="resourcesInfoTitle" data-draggable="true">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
                             </svg>
                             Resources
                         </h3>
-                        <div class="info-item">
-                            <span class="label">Internal Links</span>
-                            <span class="value" id="internalLinks"></span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">External Links</span>
-                            <span class="value" id="externalLinks"></span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Scripts</span>
-                            <span class="value" id="scriptCount"></span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Stylesheets</span>
-                            <span class="value" id="stylesheetCount"></span>
-                        </div>
-                    </article>
+                     <div class="info-item">
+                        <span class="label">Internal Links</span>
+                        <span class="value" id="internalLinks"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">External Links</span>
+                        <span class="value" id="externalLinks"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Scripts</span>
+                        <span class="value" id="scriptCount"></span>
+                    </div>
+                     <div class="info-item">
+                        <span class="label">Stylesheets</span>
+                        <span class="value" id="stylesheetCount"></span>
+                    </div>
+                </article>
 
                     <!-- Top 10 Check -->
-                    <article class="info-card" aria-labelledby="top10InfoTitle">
+                <article class="info-card" aria-labelledby="top10InfoTitle">
                         <h3 id="top10InfoTitle" data-draggable="true">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
@@ -319,100 +319,100 @@
                             </svg>
                             Top 10 Check
                         </h3>
-                        <div class="info-item">
-                            <span class="label">Region</span>
-                            <span class="value" id="selectedCountry"></span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">In List</span>
-                            <span class="value" id="rankStatus"></span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">Sample Rank</span>
+                    <div class="info-item">
+                        <span class="label">Region</span>
+                        <span class="value" id="selectedCountry"></span>
+                    </div>
+                     <div class="info-item">
+                        <span class="label">In List</span>
+                        <span class="value" id="rankStatus"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Sample Rank</span>
                             <span class="value" id="sampleRank"></span>
-                        </div>
-                    </article>
-                </div>
-            </section>
-        </main>
-    </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</div>
 
-    <!-- Settings Modal -->
+<!-- Settings Modal -->
     <div id="settingsModal" class="modal-overlay" style="display: none;" role="dialog" aria-labelledby="settingsTitle" aria-hidden="true">
-        <div class="modal-content">
-            <div class="modal-header">
+    <div class="modal-content">
+        <div class="modal-header">
                 <h2 id="settingsTitle">AI Settings</h2>
                 <button class="modal-close" id="closeSettingsModal" aria-label="Close settings">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="18" y1="6" x2="6" y2="18"></line>
                         <line x1="6" y1="6" x2="18" y2="18"></line>
-                    </svg>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="settings-section">
+                </svg>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="settings-section">
                     <h3>AI Service Configuration</h3>
                     <p class="settings-description">Choose your preferred AI service and configure API settings.</p>
-                    
-                    <div class="input-group">
-                        <label for="aiServiceSelect">AI Service</label>
-                        <select id="aiServiceSelect" class="ai-service-select">
+                
+                <div class="input-group">
+                    <label for="aiServiceSelect">AI Service</label>
+                    <select id="aiServiceSelect" class="ai-service-select">
                             <option value="openai">OpenAI (GPT)</option>
                             <option value="claude">Anthropic (Claude)</option>
                             <option value="perplexity">Perplexity</option>
                             <option value="gemini">Google (Gemini)</option>
-                            <option value="cohere">Cohere</option>
-                        </select>
-                    </div>
-                    
-                    <div class="input-group">
-                        <label for="apiKeyInput">API Key</label>
-                        <div class="api-key-input-container">
+                        <option value="cohere">Cohere</option>
+                    </select>
+                </div>
+                
+                <div class="input-group">
+                    <label for="apiKeyInput">API Key</label>
+                    <div class="api-key-input-container">
                             <input type="password" id="apiKeyInput" class="api-key-input" placeholder="Enter your API key">
                             <button type="button" id="toggleApiKey" class="toggle-visibility" aria-label="Toggle API key visibility">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                                     <circle cx="12" cy="12" r="3"></circle>
-                                </svg>
-                            </button>
-                        </div>
+                            </svg>
+                        </button>
                     </div>
-                    
-                    <div class="input-group">
+                </div>
+                
+                <div class="input-group">
                         <label for="modelSelect">Model</label>
-                        <select id="modelSelect" class="model-select">
+                    <select id="modelSelect" class="model-select">
                             <!-- Options will be populated by JavaScript -->
-                        </select>
-                    </div>
-                    
-                    <div class="input-group">
+                    </select>
+                </div>
+                
+                <div class="input-group">
                         <label for="temperatureRange">Temperature: <span id="temperatureValue">0.7</span></label>
                         <input type="range" id="temperatureRange" class="temperature-slider" min="0" max="2" step="0.1" value="0.7">
-                    </div>
-                    
-                    <div class="api-key-info">
-                        <h4>How to get your API key:</h4>
-                        <ol>
+                </div>
+                
+                <div class="api-key-info">
+                    <h4>How to get your API key:</h4>
+                            <ol>
                             <li>Visit the service provider's website</li>
                             <li>Create an account or sign in</li>
                             <li>Navigate to API settings</li>
-                            <li>Generate a new API key</li>
-                            <li>Copy and paste it here</li>
-                        </ol>
+                                <li>Generate a new API key</li>
+                                <li>Copy and paste it here</li>
+                            </ol>
                         <p><a href="#" id="apiGuideLink" target="_blank" rel="noopener">View detailed guide</a></p>
-                    </div>
+                        </div>
                     
                     <div class="privacy-notice">
                         <p><strong>Privacy Notice:</strong> Your API key is stored locally in your browser and is never sent to our servers. All AI requests are made directly from your browser to the AI service provider.</p>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
+        <div class="modal-footer">
                 <button type="button" id="clearApiKey" class="btn-secondary">Clear Settings</button>
                 <button type="button" id="saveApiKey" class="btn-primary">Save Settings</button>
-            </div>
         </div>
     </div>
+</div>
 
     <!-- Toast Notification -->
     <div id="toast" class="toast" role="alert" aria-live="polite"></div>
