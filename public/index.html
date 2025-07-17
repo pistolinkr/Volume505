@@ -3,26 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Volume 505 - Modern Website Analysis Tool</title>
-    <meta name="description" content="Analyze any website with our modern, AI-powered analysis tool. Get detailed insights about SEO, performance, security, and more.">
+    <title>Volume 505</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔍</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header role="banner" class="main-header">
+    <header role="banner">
         <div class="header-content">
             <div class="header-left">
-                <h1 class="main-title">
-                    <span class="title-icon">🔍</span>
-                    Volume 505
-                </h1>
-                <p class="subtitle">Modern website analysis powered by AI</p>
+                <h1 class="main-title">Volume 505</h1>
+                <p class="subtitle">A minimalist tool for website analysis.</p>
             </div>
             <div class="header-right">
-                <button class="settings-btn" id="settingsBtn" aria-label="Settings" title="Configure AI settings">
+                <button class="settings-btn" id="settingsBtn" aria-label="Settings">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.38a2 2 0 0 0-.73-2.73l-.15-.1a2 2 0 0 1-1-1.72v-.51a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/>
                         <circle cx="12" cy="12" r="3"/>
@@ -31,79 +26,67 @@
             </div>
         </div>
     </header>
-
     <div class="top-blur-mask"></div>
-    
     <div class="container">
         <main id="mainContent" tabindex="-1">
             <div class="sticky-blur-overlay"></div>
-            
-            <!-- Popular Sites Section -->
-            <section class="popular-sites-section" aria-labelledby="popularSitesTitle">
-                <h2 id="popularSitesTitle" class="visually-hidden">Popular Websites</h2>
-                <div class="all-sites-list">
-                    <div class="sites-row">
-                        <a class="popular-site" href="#" data-url="https://www.google.com" target="_self" rel="noopener" title="Analyze Google">
-                            <span class="site-icon">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Google_Favicon_2025.svg/1920px-Google_Favicon_2025.svg.png" alt="Google" width="32" height="32" loading="lazy" />
+            <div class="all-sites-list" style="display:flex; flex-direction:column; align-items:center; gap:18px; margin: 40px 0 32px 0;">
+                <div class="sites-row" style="display:flex; justify-content:center; gap:24px;">
+                    <a class="popular-site" href="#" data-url="https://www.google.com" target="_self" rel="noopener" title="Google">
+                        <span class="site-icon" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Google_Favicon_2025.svg/1920px-Google_Favicon_2025.svg.png" alt="Google" width="36" height="36" />
                         </span>
                         <span>Google</span>
                     </a>
-                        <a class="popular-site" href="#" data-url="https://www.facebook.com" target="_self" rel="noopener" title="Analyze Facebook">
-                            <span class="site-icon">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/1200px-2023_Facebook_icon.svg.png?20231011122028" alt="Facebook" width="32" height="32" loading="lazy" />
+                    <a class="popular-site" href="#" data-url="https://www.facebook.com" target="_self" rel="noopener" title="Facebook">
+                        <span class="site-icon" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/1200px-2023_Facebook_icon.svg.png?20231011122028" alt="Facebook" width="36" height="36" />
                         </span>
                         <span>Facebook</span>
                     </a>
-                        <a class="popular-site" href="#" data-url="https://www.youtube.com" target="_self" rel="noopener" title="Analyze YouTube">
-                            <span class="site-icon">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube" width="32" height="32" loading="lazy" />
+                    <a class="popular-site" href="#" data-url="https://www.youtube.com" target="_self" rel="noopener" title="YouTube">
+                        <span class="site-icon" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube" width="36" height="36" />
                         </span>
                         <span>YouTube</span>
                     </a>
-                        <a class="popular-site" href="#" data-url="https://www.threads.net" target="_self" rel="noopener" title="Analyze Threads">
-                            <span class="site-icon">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Threads_%28app%29_logo.svg" alt="Threads" width="32" height="32" loading="lazy" />
+                    <a class="popular-site" href="#" data-url="https://www.threads.net" target="_self" rel="noopener" title="Threads">
+                        <span class="site-icon" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Threads_%28app%29_logo.svg" alt="Threads" width="36" height="36" />
                         </span>
                         <span>Threads</span>
                     </a>
                 </div>
-                    <div class="sites-row">
-                        <a class="popular-site" href="#" data-url="https://www.blueskyweb.xyz" target="_self" rel="noopener" title="Analyze Bluesky">
-                            <span class="site-icon">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Bluesky_butterfly-logo.svg" alt="Bluesky" width="32" height="32" loading="lazy" />
+                <div class="sites-row" style="display:flex; justify-content:center; gap:24px;">
+                    <a class="popular-site" href="#" data-url="https://www.blueskyweb.xyz" target="_self" rel="noopener" title="Bluesky">
+                        <span class="site-icon" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Bluesky_butterfly-logo.svg" alt="Bluesky" width="36" height="36" />
                         </span>
                         <span>Bluesky</span>
                     </a>
-                        <a class="popular-site" href="#" data-url="https://www.mastodon.social" target="_self" rel="noopener" title="Analyze Mastodon">
-                            <span class="site-icon">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Mastodon_Logotype_%28Simple%29.svg" alt="Mastodon" width="32" height="32" loading="lazy" />
+                    <a class="popular-site" href="#" data-url="https://www.mastodon.social" target="_self" rel="noopener" title="Mastodon">
+                        <span class="site-icon" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Mastodon_Logotype_%28Simple%29.svg" alt="Mastodon" width="36" height="36" />
                         </span>
                         <span>Mastodon</span>
                     </a>
-                        <a class="popular-site" href="#" data-url="https://www.notion.so" target="_self" rel="noopener" title="Analyze Notion">
-                            <span class="site-icon">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg" alt="Notion" width="32" height="32" loading="lazy" />
+                    <a class="popular-site" href="#" data-url="https://www.notion.so" target="_self" rel="noopener" title="Notion">
+                        <span class="site-icon" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg" alt="Notion" width="36" height="36" />
                         </span>
                         <span>Notion</span>
                     </a>
                 </div>
             </div>
-            </section>
-
-            <!-- Input Section -->
             <section class="input-section" aria-labelledby="analyzeFormLabel">
                 <form id="urlForm" autocomplete="off" aria-describedby="analyzeFormDesc">
                     <div class="input-group">
                         <label for="urlInput" id="analyzeFormLabel" class="visually-hidden">Website URL</label>
-                        <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.72"></path>
-                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.72-1.72"></path>
-                        </svg>
+                        <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.72"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.72-1.72"></path></svg>
                         <input 
                         type="url" 
                         id="urlInput" 
-                            placeholder="Enter website URL (e.g., https://example.com)"
+                        placeholder="https://example.com"
                         required
                         aria-required="true"
                         aria-label="Website URL"
@@ -111,10 +94,10 @@
                     >
                     <label for="countrySelect" class="visually-hidden">Select Region</label>
                     <select id="countrySelect" title="Select Region" aria-label="Select Region">
-                            <option value="KR">🇰🇷 Korea</option>
-                            <option value="US">🇺🇸 United States</option>
-                            <option value="JP">🇯🇵 Japan</option>
-                            <option value="global">🌍 Global</option>
+                        <option value="KR">KR</option>
+                        <option value="US">US</option>
+                        <option value="JP">JP</option>
+                        <option value="global">Global</option>
                     </select>
                     <button type="submit" id="submitBtn" aria-label="Analyze Website">
                         <span class="btn-text">Analyze</span>
@@ -124,7 +107,6 @@
             </form>
         </section>
 
-            <!-- Results Section -->
         <section class="results-section" id="resultsSection" style="display: none;" aria-live="polite">
             <header class="info-header">
                 <h2>Analysis Report</h2>
@@ -132,36 +114,19 @@
             </header>
             
             <div class="info-grid">
-                    <!-- AI Summary Card -->
                 <article class="info-card ai-summary-card" style="grid-column: 1 / -1;" aria-labelledby="aiSummaryTitle">
-                        <h3 id="aiSummaryTitle" data-draggable="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
-                                <path d="M5 3v4"></path>
-                                <path d="M19 17v4"></path>
-                                <path d="M3 5h4"></path>
-                                <path d="M17 19h4"></path>
-                            </svg>
+                    <h3 id="aiSummaryTitle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -3px; margin-right: 8px;" aria-hidden="true"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path><path d="M5 3v4"></path><path d="M19 17v4"></path><path d="M3 5h4"></path><path d="M17 19h4"></path></svg>
                         AI Summary
                     </h3>
                     <p class="ai-summary-content" id="aiSummaryContent"></p>
                 </article>
                 
-                    <!-- General Information -->
                 <article class="info-card" aria-labelledby="generalInfoTitle">
-                        <h3 id="generalInfoTitle" data-draggable="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <path d="M12 16v-4"></path>
-                                <path d="M12 8h.01"></path>
-                            </svg>
-                            General
-                        </h3>
+                    <h3 id="generalInfoTitle">General</h3>
                     <div class="info-item">
                         <span class="label">Favicon</span>
-                            <span class="value" id="siteFaviconCell">
-                                <img id="siteFavicon" src="" alt="Site favicon" style="width: 16px; height: 16px; vertical-align: middle; display: none;">
-                            </span>
+                        <span class="value" id="siteFaviconCell"><img id="siteFavicon" src="" alt="favicon" style="width: 16px; height: 16px; vertical-align: middle; display: none;"></span>
                     </div>
                     <div class="info-item">
                         <span class="label">URL</span>
@@ -181,16 +146,8 @@
                     </div>
                 </article>
 
-                    <!-- Technical Information -->
                 <article class="info-card" aria-labelledby="technicalInfoTitle">
-                        <h3 id="technicalInfoTitle" data-draggable="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                <line x1="8" y1="21" x2="16" y2="21"></line>
-                                <line x1="12" y1="17" x2="12" y2="21"></line>
-                            </svg>
-                            Technical
-                        </h3>
+                    <h3 id="technicalInfoTitle">Technical</h3>
                     <div class="info-item">
                         <span class="label">Status Code</span>
                         <span class="value" id="statusCode"></span>
@@ -209,18 +166,8 @@
                     </div>
                 </article>
 
-                    <!-- Metadata Information -->
                 <article class="info-card" aria-labelledby="metadataInfoTitle">
-                        <h3 id="metadataInfoTitle" data-draggable="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                                <polyline points="14,2 14,8 20,8"></polyline>
-                                <line x1="16" y1="13" x2="8" y2="13"></line>
-                                <line x1="16" y1="17" x2="8" y2="17"></line>
-                                <polyline points="10,9 9,9 8,9"></polyline>
-                            </svg>
-                            Metadata
-                        </h3>
+                    <h3 id="metadataInfoTitle">Metadata</h3>
                     <div class="info-item">
                         <span class="label">Keywords</span>
                         <span class="value" id="siteKeywords"></span>
@@ -235,14 +182,8 @@
                     </div>
                 </article>
 
-                    <!-- Security Information -->
                 <article class="info-card" aria-labelledby="securityInfoTitle">
-                        <h3 id="securityInfoTitle" data-draggable="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                            </svg>
-                            Security
-                        </h3>
+                    <h3 id="securityInfoTitle">Security</h3>
                     <div class="info-item">
                         <span class="label">HTTPS</span>
                         <span class="value" id="isHttps"></span>
@@ -257,16 +198,8 @@
                     </div>
                 </article>
                 
-                    <!-- Open Graph Information -->
                 <article class="info-card" aria-labelledby="ogInfoTitle">
-                        <h3 id="ogInfoTitle" data-draggable="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                                <polyline points="21,15 16,10 5,21"></polyline>
-                            </svg>
-                            Open Graph
-                        </h3>
+                    <h3 id="ogInfoTitle">Open Graph</h3>
                     <div class="info-item">
                         <span class="label">OG Title</span>
                         <span class="value" id="ogTitle"></span>
@@ -278,19 +211,13 @@
                     <div class="info-item">
                         <span class="label">OG Image</span>
                         <span class="value" id="ogImageContainer">
-                                <img id="ogImage" src="" alt="Open Graph Image" style="max-width: 100%; border-radius: 5px; margin-top: 5px; display: none;">
+                            <img id="ogImage" src="" alt="OG Image" style="max-width: 100%; border-radius: 5px; margin-top: 5px; display: none;">
                         </span>
                     </div>
                 </article>
 
-                    <!-- Resources Information -->
                 <article class="info-card" aria-labelledby="resourcesInfoTitle">
-                        <h3 id="resourcesInfoTitle" data-draggable="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
-                            </svg>
-                            Resources
-                        </h3>
+                    <h3 id="resourcesInfoTitle">Resources</h3>
                      <div class="info-item">
                         <span class="label">Internal Links</span>
                         <span class="value" id="internalLinks"></span>
@@ -309,16 +236,8 @@
                     </div>
                 </article>
 
-                    <!-- Top 10 Check -->
                 <article class="info-card" aria-labelledby="top10InfoTitle">
-                        <h3 id="top10InfoTitle" data-draggable="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
-                                <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
-                                <path d="M9 14l2 2 4-4"></path>
-                            </svg>
-                            Top 10 Check
-                        </h3>
+                    <h3 id="top10InfoTitle">Top 10 Check (Sample)</h3>
                     <div class="info-item">
                         <span class="label">Region</span>
                         <span class="value" id="selectedCountry"></span>
@@ -329,38 +248,96 @@
                     </div>
                     <div class="info-item">
                         <span class="label">Sample Rank</span>
-                            <span class="value" id="sampleRank"></span>
+                        <span class="value" id="rankPosition"></span>
                     </div>
                 </article>
+            </div>
+
+            <div class="error-message" id="errorMessage" style="display: none;" role="alert">
+                <h3>Analysis Failed</h3>
+                <p id="errorText"></p>
             </div>
         </section>
     </main>
 </div>
 
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container notion-footer">
+    <div class="notion-footer-grid">
+      <div class="notion-footer-section">
+        <div class="notion-footer-title">Services</div>
+        <ul>
+          <li><a href="index.html">Website Analysis</a></li>
+          <li><a href="seo-check.html">SEO Check</a></li>
+          <li><a href="performance-test.html">Performance Test</a></li>
+          <li><a href="security-audit.html">Security Audit</a></li>
+          <li><a href="metadata-analysis.html">Metadata Analysis</a></li>
+        </ul>
+      </div>
+      <div class="notion-footer-section">
+        <div class="notion-footer-title">Solutions</div>
+        <ul>
+          <li><a href="how-to-use.html">How to Use</a></li>
+          <li><a href="api-docs.html">API Documentation</a></li>
+          <li><a href="best-practices.html">Best Practices</a></li>
+          <li><a href="troubleshooting.html">Troubleshooting</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="notion-footer-section">
+        <div class="notion-footer-title">Company</div>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="notion-footer-section">
+        <div class="notion-footer-title">Contact</div>
+        <ul>
+          <li><a href="mailto:pistolinkr@icloud.com">Pistolinkr@icloud.com</a></li>
+          <li><a href="contact.html">Contact Form</a></li>
+          <li><a href="support.html">Support Center</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="notion-footer-bottom">
+      <div class="notion-footer-social">
+        <a href="https://github.com/qklp1235/Volume505/" target="_blank" rel="noopener" aria-label="GitHub Repository"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.66-.22.66-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.115 2.51.337 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85 0 1.33-.01 2.4-.01 2.73 0 .27.16.58.67.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg></a>
+      </div>
+      <div class="notion-footer-copyright">&copy; 2025 Volume 505. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
 <!-- Settings Modal -->
-    <div id="settingsModal" class="modal-overlay" style="display: none;" role="dialog" aria-labelledby="settingsTitle" aria-hidden="true">
+<div id="settingsModal" class="modal-overlay" style="display: none;">
     <div class="modal-content">
         <div class="modal-header">
-                <h2 id="settingsTitle">AI Settings</h2>
-                <button class="modal-close" id="closeSettingsModal" aria-label="Close settings">
+            <h2>AI Settings</h2>
+            <button class="modal-close" id="closeSettingsModal" aria-label="Close">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    <path d="M18 6L6 18"/>
+                    <path d="M6 6l12 12"/>
                 </svg>
             </button>
         </div>
         <div class="modal-body">
             <div class="settings-section">
-                    <h3>AI Service Configuration</h3>
-                    <p class="settings-description">Choose your preferred AI service and configure API settings.</p>
+                <h3>AI Configuration</h3>
+                <p class="settings-description">Choose your preferred AI service and enter your API key to enable AI-powered website analysis summaries.</p>
                 
                 <div class="input-group">
                     <label for="aiServiceSelect">AI Service</label>
                     <select id="aiServiceSelect" class="ai-service-select">
-                            <option value="openai">OpenAI (GPT)</option>
-                            <option value="claude">Anthropic (Claude)</option>
-                            <option value="perplexity">Perplexity</option>
-                            <option value="gemini">Google (Gemini)</option>
+                        <option value="openai">OpenAI (GPT-4, GPT-3.5)</option>
+                        <option value="claude">Anthropic Claude</option>
+                        <option value="perplexity">Perplexity AI</option>
+                        <option value="gemini">Google Gemini</option>
                         <option value="cohere">Cohere</option>
                     </select>
                 </div>
@@ -368,55 +345,98 @@
                 <div class="input-group">
                     <label for="apiKeyInput">API Key</label>
                     <div class="api-key-input-container">
-                            <input type="password" id="apiKeyInput" class="api-key-input" placeholder="Enter your API key">
-                            <button type="button" id="toggleApiKey" class="toggle-visibility" aria-label="Toggle API key visibility">
+                        <input type="password" id="apiKeyInput" placeholder="Enter your API key" class="api-key-input">
+                        <button type="button" class="toggle-visibility" id="toggleApiKey" aria-label="Toggle API key visibility">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                    <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                <circle cx="12" cy="12" r="3"/>
                             </svg>
                         </button>
                     </div>
                 </div>
                 
                 <div class="input-group">
-                        <label for="modelSelect">Model</label>
+                    <label for="modelSelect">AI Model</label>
                     <select id="modelSelect" class="model-select">
-                            <!-- Options will be populated by JavaScript -->
+                        <option value="gpt-4o">GPT-4o (Latest)</option>
+                        <option value="gpt-4-turbo">GPT-4 Turbo</option>
+                        <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
                     </select>
                 </div>
                 
                 <div class="input-group">
-                        <label for="temperatureRange">Temperature: <span id="temperatureValue">0.7</span></label>
-                        <input type="range" id="temperatureRange" class="temperature-slider" min="0" max="2" step="0.1" value="0.7">
+                    <label for="temperatureRange">Temperature: <span id="temperatureValue">0.1</span></label>
+                    <input type="range" id="temperatureRange" min="0" max="1" step="0.1" value="0.1" class="temperature-slider">
                 </div>
                 
                 <div class="api-key-info">
                     <h4>How to get your API key:</h4>
+                    <div id="apiKeyGuide">
+                        <div class="api-guide openai-guide">
                             <ol>
-                            <li>Visit the service provider's website</li>
-                            <li>Create an account or sign in</li>
-                            <li>Navigate to API settings</li>
+                                <li>Visit <a href="https://platform.openai.com" target="_blank" rel="noopener">OpenAI Platform</a></li>
+                                <li>Sign up or log in to your account</li>
+                                <li>Go to API → API Keys</li>
+                                <li>Create a new secret key</li>
+                                <li>Copy and paste it here</li>
+                            </ol>
+                        </div>
+                        <div class="api-guide claude-guide" style="display: none;">
+                            <ol>
+                                <li>Visit <a href="https://console.anthropic.com" target="_blank" rel="noopener">Anthropic Console</a></li>
+                                <li>Sign up or log in to your account</li>
+                                <li>Go to API Keys section</li>
                                 <li>Generate a new API key</li>
                                 <li>Copy and paste it here</li>
                             </ol>
-                        <p><a href="#" id="apiGuideLink" target="_blank" rel="noopener">View detailed guide</a></p>
                         </div>
-                    
-                    <div class="privacy-notice">
-                        <p><strong>Privacy Notice:</strong> Your API key is stored locally in your browser and is never sent to our servers. All AI requests are made directly from your browser to the AI service provider.</p>
+                        <div class="api-guide perplexity-guide" style="display: none;">
+                            <ol>
+                                <li>Visit <a href="https://perplexity.ai" target="_blank" rel="noopener">Perplexity AI</a></li>
+                                <li>Sign up or log in to your account</li>
+                                <li>Go to your API dashboard</li>
+                                <li>Generate a new API key</li>
+                                <li>Copy and paste it here</li>
+                            </ol>
+                        </div>
+                        <div class="api-guide gemini-guide" style="display: none;">
+                            <ol>
+                                <li>Visit <a href="https://makersuite.google.com/app/apikey" target="_blank" rel="noopener">Google AI Studio</a></li>
+                                <li>Sign up or log in with your Google account</li>
+                                <li>Create API key</li>
+                                <li>Copy and paste it here</li>
+                            </ol>
+                        </div>
+                        <div class="api-guide cohere-guide" style="display: none;">
+                            <ol>
+                                <li>Visit <a href="https://dashboard.cohere.ai" target="_blank" rel="noopener">Cohere Dashboard</a></li>
+                                <li>Sign up or log in to your account</li>
+                                <li>Go to API Keys section</li>
+                                <li>Generate a new API key</li>
+                                <li>Copy and paste it here</li>
+                            </ol>
+                        </div>
                     </div>
+                    <p class="privacy-notice">
+                        <strong>Privacy:</strong> Your API key is stored locally in your browser and never sent to our servers. 
+                        It's only used to make direct requests to the selected AI service.
+                    </p>
                 </div>
             </div>
+        </div>
         <div class="modal-footer">
-                <button type="button" id="clearApiKey" class="btn-secondary">Clear Settings</button>
-                <button type="button" id="saveApiKey" class="btn-primary">Save Settings</button>
+            <button class="btn-secondary" id="clearApiKey">Clear Settings</button>
+            <button class="btn-primary" id="saveApiKey">Save Settings</button>
         </div>
     </div>
 </div>
 
-    <!-- Toast Notification -->
-    <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-    <script src="script.js"></script>
+<script src="script.js" defer></script>
+<script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html> 

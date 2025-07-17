@@ -7,8 +7,7 @@
     "start": "node server.js",
     "dev": "nodemon server.js",
     "build": "echo 'No build step required for static files'",
-    "test": "echo 'No tests specified'",
-    "deploy": "bash deploy.sh"
+    "test": "echo 'No tests specified'"
   },
   "keywords": [
     "website",
